@@ -8,68 +8,80 @@
     <title>CSS Layout master class</title>
   </head>
   <body>
-    <!-- <h1>Hello vite!!</h1> -->
-    <div class="box">
-      1
-      <li>display:flex</li>
-      <li></li>
-      <li></li>
+    <!-- npm run dev <-> 종료 ^ + c -->
+    <div class="flex_container">
+      <div class="box">
+        1
+        <li>display:flex</li>
+        <li></li>
+        <li></li>
+      </div>
+      <div class="box">
+        2
+        <li>flex-flow</li>
+        <li>flex-direction과 flex-warp의 합침</li>
+        <li>default는 row nowrap</li>
+      </div>
+      <div class="box">
+        3
+        <li>oerder</li>
+        <li>기본 order:0</li>
+        <li>order수가 작을수록</li>
+        <li>상대적 우선순위</li>
+      </div>
+      <div class="box">
+        4
+        <li>align-self</li>
+        <li></li>
+        <li></li>
+      </div>
+      <div class="box">
+        5
+        <li>flex-Grow</li>
+        <li>화면 면적 비율 //몇:몇과 같은 비율</li>
+        <li>"디폴트 : 0" <br />(필요한 요소의 크기 만큼만 차지함)</li>
+      </div>
+      <div class="box">
+        6
+        <li>flex-shrink</li>
+        <li>화면 줄어듦에 따른 면적 축소 비율</li>
+        <li>축소 비중//많이 줄어들 요소와 적게 줄어들 요소</li>
+        <li>
+          0이면 줄어들지 않음//"1은 디폴트"//숫자가 클수록 우선적으로 축소
+        </li>
+      </div>
+      <div class="box">
+        7
+        <li>flex-basis</li>
+        <li>주축의 크키, collum이냐 row에 따라</li>
+        <li>세로height 혹은 가로widht의 사이즈를 정의한다</li>
+      </div>
+      <div class="box">
+        8
+        <li>flex속성은</li>
+        <li>flex: flex-gorw flex-shrink flex-basis</li>
+        <li>순서로 여러 속성을 한번에 작성가능</li>
+      </div>
+      <div class="box">
+        9
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
+      <div class="box">
+        10
+        <li></li>
+        <li></li>
+        <li></li>
+      </div>
     </div>
-    <div class="box">
-      2
-      <li>flex-flow</li>
-      <li>flex-direction과 flex-warp의 합침</li>
-      <li>default는 row nowrap</li>
-    </div>
-    <div class="box">
-      3
-      <li>oerder</li>
-      <li>기본 order:0</li>
-      <li>order수가 작을수록</li>
-      <li>상대적 우선순위</li>
-    </div>
-    <div class="box">
-      4
-      <li>align-self</li>
-      <li></li>
-      <li></li>
-    </div>
-    <div class="box">
-      5
-      <li>flex-Grow</li>
-      <li>화면 면적 비율 //몇:몇과 같은 비율</li>
-      <li>"디폴트 : 0" <br />(필요한 요소의 크기 만큼만 차지함)</li>
-    </div>
-    <div class="box">
-      6
-      <li>flex-shrink</li>
-      <li>화면 줄어듦에 따른 면적 축소 비율</li>
-      <li>축소 비중//많이 줄어들 요소와 적게 줄어들 요소</li>
-      <li>0이면 줄어들지 않음//"1은 디폴트"//숫자가 클수록 우선적으로 축소</li>
-    </div>
-    <div class="box">
-      7
-      <li>flex-basis</li>
-      <li>주축의 크키, collum이냐 row에 따라</li>
-      <li>세로height 혹은 가로widht의 사이즈를 정의한다</li>
-    </div>
-    <div class="box">
-      8
-      <li>flex속성은</li>
-      <li>flex: flex-gorw flex-shrink flex-basis</li>
-      <li>순서로 여러 속성을 한번에 작성가능 </li>
-    </div>
-    <div class="box">
-      9
-      <li></li>
-      <li></li>
-      <li></li>
-    </div>
-    <div class="box">
-      10
-      <li></li>
-      <li></li>
-      <li></li>
+    <div class="grid_container">
+      <div class="grid_box">1</div>
+      <div class="grid_box">2</div>
+      <div class="grid_box">3</div>
+      <div class="grid_box">4</div>
+      <!-- <div class="grid_box">5</div> -->
+      <!-- <div class="grid_box">6</div> -->
     </div>
   </body>
 </html>
