@@ -1,0 +1,117 @@
+$bgColor:lightblue;
+
+// :root {
+//   --bgColor: red;
+// }
+
+body {
+  /* position: relative; */
+  padding: 0;
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  text-decoration: none;
+  font-style: inherit;
+  color: inherit;
+  list-style: none;
+  padding-left: 0px;
+  .flex_container {
+    /* position: absolute;
+    top: 0;
+    left: 0; */
+    display: flex;
+    height: 100vh;
+  
+    /* gap: 10px; */
+    column-gap: 10px;
+    row-gap: 20px;
+  
+    justify-content: center;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* align-content: center; */
+    background-color: $bgColor;
+  }
+  .flex_box {
+    order: 0;
+    /* 기본 값 :0*/
+    width: 200px;
+    height: 200px;
+    background-color: tomato;
+    color: white;
+    font-size: 36px;
+    text-align: center;
+  }
+  .flex_box > li {
+    font-size: 12px;
+  }
+  .flex_box:first-child {
+    flex-shrink: 0;
+    background-color: red;
+  }
+  .flex_box:nth-child(2) {
+    flex-shrink: 1;
+    background-color: darkred;
+  }
+  .flex_box:nth-child(3) {
+    flex-shrink: 3;
+    background-color: rgb(83, 0, 0);
+  }
+  .flex_box:nth-child(4) {
+    align-self: flex-end;
+  }
+  .flex_box:nth-child(4) {
+    background-color: darkkhaki;
+    order: -1;
+  }
+  .flex_box:nth-child(6) {
+    background-color: olive;
+    order: 6;
+  }
+  .grid_container {
+    /* position: absolute; */
+    background-color: blanchedalmond;
+    height: 100vh;
+    display: grid;
+    /* grid-template-columns: [happy] 1fr [lunch] 2fr [box] 1fr [gift];
+    grid-template-rows: [won] 200px [en] 60px [doller]; */
+  
+    /* grid-template-columns: repeat(5, 200px); */
+    /* grid-template-columns: 1fr minmax(100px, 1fr) 1fr 1fr 1fr; */
+    grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+    /* grid-template-rows: repeat(2, 200px); */
+  
+    /* row-gap: 10px;
+    column-gap: 20px; */
+    gap: 10px;
+  
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+  }
+  .grid_box {
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    align-content: center;
+    /* place-content: align-content justify-content; */
+    width: 200px;
+    height: 200px;
+  }
+  .grid_box:first-child {
+    background-color: indianred;
+    align-self: start;
+    justify-self: start;
+    /* grid-row: 1 / -1; */
+  }
+  .grid_box:nth-child(8) {
+    background-color: blueviolet;
+    place-self: center center;
+    grid-column: span 2;
+    /* grid-column: lunch / span 2; */
+  }
+}

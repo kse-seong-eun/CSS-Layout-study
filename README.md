@@ -26,6 +26,7 @@
 
 ![alt text](image-2.png)
 <br><br>
+
 ### 횡 / 열에 라인의 이름을 붙이는 법
 
 - `grid-template-columns` : [happy] 1fr [lunch] 2fr [box] 1fr [gift]
