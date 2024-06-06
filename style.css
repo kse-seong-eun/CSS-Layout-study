@@ -31,7 +31,7 @@ body {
   background-color: lightblue;
 }
 
-.box {
+.flex_box {
   order: 0;
   /* 기본 값 :0*/
   width: 200px;
@@ -41,29 +41,29 @@ body {
   font-size: 36px;
   text-align: center;
 }
-.box > li {
+.flex_box > li {
   font-size: 12px;
 }
-.box:first-child {
+.flex_box:first-child {
   flex-shrink: 0;
   background-color: red;
 }
-.box:nth-child(2) {
+.flex_box:nth-child(2) {
   flex-shrink: 1;
   background-color: darkred;
 }
-.box:nth-child(3) {
+.flex_box:nth-child(3) {
   flex-shrink: 3;
   background-color: rgb(83, 0, 0);
 }
-.box:nth-child(4) {
+.flex_box:nth-child(4) {
   align-self: flex-end;
 }
-.box:nth-child(4) {
+.flex_box:nth-child(4) {
   background-color: darkkhaki;
   order: -1;
 }
-.box:nth-child(6) {
+.flex_box:nth-child(6) {
   background-color: olive;
   order: 6;
 }
@@ -75,11 +75,16 @@ body {
   display: grid;
   /* grid-template-columns: [happy] 1fr [lunch] 2fr [box] 1fr [gift];
   grid-template-rows: [won] 200px [en] 60px [doller]; */
-  grid-template-columns: repeat(5, 200px);
-  grid-template-rows: repeat(2, 200px);
+
+  /* grid-template-columns: repeat(5, 200px); */
+  /* grid-template-columns: 1fr minmax(100px, 1fr) 1fr 1fr 1fr; */
+  grid-template-columns: repeat(auto-fill, minmax(100px, 200px));
+  /* grid-template-rows: repeat(2, 200px); */
+
   /* row-gap: 10px;
   column-gap: 20px; */
   gap: 10px;
+
   align-content: center;
   justify-content: center;
   align-items: center;
@@ -92,8 +97,8 @@ body {
   text-align: center;
   align-content: center;
   /* place-content: align-content justify-content; */
-  width: 150px;
-  height: 150px;
+  width: 200px;
+  height: 200px;
 }
 
 .grid_box:first-child {
